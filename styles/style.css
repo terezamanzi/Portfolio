@@ -1,14 +1,11 @@
 @charset "UTF-8";
 
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(255, 246, 235);
-    text-align: center; 
-    margin: 50px;
-    margin-top: 25px;
-    font-size: 20px;
-    font-weight: bolder;
-    color:gray;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header{
