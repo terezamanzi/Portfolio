@@ -9,33 +9,40 @@ body{
 }
 
 div#inicio{
+    margin: auto;  
+    width: 500px;
     height: 100%;
-    margin: auto;    
 }
 
 div#inicio:hover{
     background-color: rgba(255, 255, 255, 0.205);    
-}
-
-nav{
-    display: flex;
-    flex-flow: row wrap;
-}
-
-div.design{
-    background-image: url(imagens/terezamarca.png);
 
 }
 
-div.contato{
-    background-image: url(imagens/terezamarca.png);
+
+
+div#tarja{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;    
+}
+
+section > p{
+    background-color: rgb(187, 67, 67);
+    color: rgb(204, 32, 32);
+    width: 100%;
+    height: 200px;
+    font-weight: bolder;
+    
 
 }
 
-div.add{
-    background-image: url(imagens/terezamarca.png);
 
-}
+
+
+
 
 /*div{
     display: inline-block;
