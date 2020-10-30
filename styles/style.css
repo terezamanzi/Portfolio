@@ -1,11 +1,32 @@
 @charset "UTF-8";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,800;0,900;1,100;1,200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@200&display=swap');
+
+:root{
+    --font1: 'Epilogue', sans-serif;
+    --font2: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html, body {
+    min-height: 100vh;
+}
+
 body{
-    height: 100vh;
+
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    background-color:  rgb(255, 255, 255);
 }
 
 div#inicio{
@@ -19,33 +40,61 @@ div#inicio:hover{
 
 }
 
-
-
-div#tarja{
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;    
-}
-
-section > p{
-    background-color: rgb(187, 67, 67);
-    color: rgb(204, 32, 32);
-    width: 100%;
-    height: 200px;
-    font-weight: bolder;
-    
-
-}
-
-
-
-
-
-
-/*div{
-    display: inline-block;
+div.container{
+    background-color: rgb(255, 255, 255);
+    height: 400px;
+    width: 96%;
     text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+.container > h1{
+    font-family: var(--font1);
+    font-weight: 900;
+    font-size: 6em;
+}
+
+.container > p{
+    font-family: var(--font2);
+    font-weight: light;
+    font-size: 1.5em;
+}
+
+
+.janela{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-} */
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.design{
+    background-image: url(../imagens/design2.jpg);
+    background-position: top center;
+}
+
+.programacao{
+    background-image: url(../imagens/portfolio2.jpg);
+    background-position: top center;
+}
+
+.outros{
+    background-image: url(../imagens/terezamarca.png);
+    background-position: top center;
+}
+
+.sobre{
+    background-image: url(../imagens/design.jpg);
+    background-position: top center;
+}
+
+
+.parallax{
+    background-attachment: fixed;
+}
