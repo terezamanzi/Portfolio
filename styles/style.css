@@ -13,6 +13,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 
@@ -29,30 +30,52 @@ body{
     background-color:  rgb(255, 255, 255);
 }
 
-div#inicio{
-    margin: auto;  
-    width: 500px;
-    height: 100%;
+
+
+
+nav{
+    padding: 0;
+    color: rgb(235, 97, 42);
+    font-family: var(--font2);
+    font-weight: 600;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-div#inicio:hover{
-    background-color: rgba(255, 255, 255, 0.205);    
-
+.menu > ul ul{
+    position: absolute;
+    visibility: visible;
 }
+
+.menu ul > li{
+    display: inline;
+}
+
+.menu li > a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;    
+    text-align: center;
+}
+
+.menu li > a:hover{
+    background-color: rgb(235, 97, 42);
+    color: white;
+    transition: .5s;
+}
+
+
+
+
 
 div.container{
     background-color: rgb(255, 255, 255);
-    height: 400px;
-    width: 96%;
+    width: 100%;
+    height: 300px;
     text-align: center;
-    padding: 20px;
-    margin: auto;
-}
-
-.container > h1{
-    font-family: var(--font1);
-    font-weight: 900;
-    font-size: 6em;
+    vertical-align:middle;
+    margin-top: 20px;
 }
 
 .container > p{
@@ -61,36 +84,61 @@ div.container{
     font-size: 1.5em;
 }
 
+a{
+    text-decoration: none;
+    color:  rgb(235, 97, 42);
+}
+
+.container > h1{
+    font-family: var(--font1);
+    font-weight: 900;
+    font-size: 6em;
+    padding-top: 7vh;
+}
+
+
+
 
 .janela{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 850px;
+    height: 950px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
+.capa{
+    background-image: url(../imagens/capa.jpg);
+    background-position: top center;
+    height: 97vh;
+}
+
 .design{
-    background-image: url(../imagens/design2.jpg);
+    background-image: url(../imagens/menu/design.jpg);
     background-position: top center;
 }
 
-.programacao{
-    background-image: url(../imagens/portfolio2.jpg);
+.fotografia{
+    background-image: url(../imagens/menu/fotografia.jpg);
     background-position: top center;
 }
 
 .outros{
-    background-image: url(../imagens/terezamarca.png);
+    background-image: url(../imagens/menu/outros.jpg);
+    background-position: top center;
+}
+
+.web{
+    background-image: url(../imagens/menu/web.jpg);
     background-position: top center;
 }
 
 .sobre{
-    background-image: url(../imagens/design.jpg);
+    background-image: url(../imagens/menu/sobre.jpg);
     background-position: top center;
 }
 

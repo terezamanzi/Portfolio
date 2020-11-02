@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tereza Manzi</title>
+</head>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(48, 48, 48);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu > ul{
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li{
+    width: 150px;
+    float: left;
+}
+
+menu > a{
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: teal;
+    color: white;
+}
+
+
+.menu ul ul{
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul{
+    visibility: visible;
+}
+
+.menu a:hover{
+    background-color: rgb(78, 78, 12);
+    color: yellow;
+}
+
+.menu ul ul li{
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.menu ul ul li a{
+    background: #069;
+}
+    </style>
+    
+
+<body>  
+<nav class="menu">
+    <ul>
+        <li><a href="#">INÍCIO</a></li>
+        <li><a href="#">PORTFOLIO</a></li>
+            <ul>
+                <li><a href="#">DESIGN</a></li>
+                <li><a href="#">FOTOGRAFIA</a></li>
+                <li><a href="#">WEB</a></li>
+                <li><a href="#">OUTROS</a></li>
+            </ul>
+        <li><a href="#">SOBRE MIM</a></li>
+    </ul>
+</nav>
+</body>
+
+</html>
