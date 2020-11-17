@@ -269,11 +269,47 @@ footer{ /* escolher outra tipografia */
 
 
 
-/* editorial */
 
 
 
+/*    EDITORIAL   */
 
+.container-editorial{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    grid-auto-flow: dense;
+}
+
+.editorial-img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.editorial-img2{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.editorial-img2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: .8s ease-in-out
+}
+
+.editorial-img2:hover img{
+    transform: scale(1.2);
+}
+
+.editorial-img2 .text{
+    color: white;
+    font-size: 0.5em;
+}
 
 
 
@@ -303,7 +339,7 @@ footer{ /* escolher outra tipografia */
     height: 100%;
     overflow: hidden;
 }
-
+ 
 .galeria-item .img img{
     width: 100%;
     height: 100%;
@@ -429,22 +465,6 @@ footer{ /* escolher outra tipografia */
     color: rgba(0, 0, 0, 0.748);
 }
 
-.w-1{
-    grid-column: span 1;
-}
-
-.w-2{
-    grid-column: span 2;
-}
-
-.h-1{
-    grid-row: span 1;
-}
-
-.h-2{
-    grid-row: span 2;
-}
-
 
 @media screen and (max-width: 600px){
     .container-about{
@@ -457,3 +477,8 @@ footer{ /* escolher outra tipografia */
     #exper > li{text-align: left;}
     #exper > h1{text-align: left; padding-left: 40px;}
 }
+
+
+
+
+
