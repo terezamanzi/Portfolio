@@ -273,6 +273,7 @@ footer{ /* escolher outra tipografia */
 
 /*    EDITORIAL   */
 
+/*
 .container-editorial{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -310,6 +311,15 @@ footer{ /* escolher outra tipografia */
     font-size: 0.5em;
 }
 
+@media screen and (max-width: 400px){
+    .container-editorial{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .w-1, .w-2, .w-3{grid-column: span 1;}
+    .h-1, .h-2, .h-3{grid-row: span 1;}
+
+}
+*/
 
 
 
@@ -318,7 +328,7 @@ footer{ /* escolher outra tipografia */
 
 
 
-/* FOTOGRAFIA */
+/* FOTOGRAFIA IV EDITORIAL*/
 .container-photo{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -363,7 +373,7 @@ footer{ /* escolher outra tipografia */
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-                        /* NAO ESQUECER */
+    width: 60%;
 }
 
 .galeria-item:hover .text{
@@ -373,6 +383,17 @@ footer{ /* escolher outra tipografia */
 
 .galeria-item:hover .img img{
     transform: scale(1.2);
+}
+
+.text > h1{
+    text-align: left;
+    font-size: 1em;
+}
+
+.text > p{
+    text-align: left;
+    font-size: 0.8em;
+    line-height: 1.5;
 }
 
 .w-1{
@@ -502,7 +523,9 @@ footer{ /* escolher outra tipografia */
 
 /* PÁGINAS CARROSELL */
 
-#items-wrapper {
+
+
+/*#items-wrapper {
     width: 100vw;
 }
 
@@ -510,22 +533,22 @@ footer{ /* escolher outra tipografia */
     display: flex;
 
     overflow-x: auto;
-    /* a barra do scroll sai do body e ficar abaixo das imagens */
+    /* a barra do scroll sai do body e ficar abaixo das imagens 
     scroll-snap-type: x mandatory;
-    /* o scroll acontece automaticamente caso o usuário pare a imagem no meio */
+    /* o scroll acontece automaticamente caso o usuário pare a imagem no meio 
     -webkit-overflow-scrolling: touch;
-    /* para que funcione em mais navegadores */
+    /* para que funcione em mais navegadores 
     scroll-behavior: smooth;
 }
 
 .item {
     flex: none;
-    /* tira a opção de modificar tamanho das imagens que está em ITEM. essa opção esta em #items */
+    /* tira a opção de modificar tamanho das imagens que está em ITEM. essa opção esta em #items 
     width: 50%;
     height: 80vh;
     margin: 10px;
     scroll-snap-align: start;
-    /* segunda propriedade obrigatória para que aconteça o scroll automático. no INÍCIO da imagem */
+    /* segunda propriedade obrigatória para que aconteça o scroll automático. no INÍCIO da imagem 
 }
 
 img {
@@ -533,7 +556,7 @@ img {
     height: 100%;
 
     object-fit: cover;
-    /* a imagem vai se encaixar na àrea disponível e não será achatada ou esticada */
+    /* a imagem vai se encaixar na àrea disponível e não será achatada ou esticada 
 }
 
 .item > h1 {
@@ -556,3 +579,30 @@ img {
     padding: 10px;
     color: rgba(0, 0, 0, 0.747);
 }
+
+.item > h1 {
+    text-align: right;
+    font-family: var(--font3);
+    font-size: 1em;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.74);
+    line-height: 1.3;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.item > p {
+    text-align: right;
+    font-family: var(--font3);
+    font-size: .9em;
+    line-height: 1.5;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.747);
+}
+
+*/
+
+
+
+
