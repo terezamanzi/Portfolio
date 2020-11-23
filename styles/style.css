@@ -373,7 +373,7 @@ footer{ /* escolher outra tipografia */
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 60%;
+    width: 70%;
 }
 
 .galeria-item:hover .text{
@@ -407,6 +407,9 @@ footer{ /* escolher outra tipografia */
 .w-3{
     grid-column: span 3;
 }
+.w-4{
+    grid-column: span 4;
+}
 
 .h-1{
     grid-row: span 1;
@@ -417,6 +420,9 @@ footer{ /* escolher outra tipografia */
 .h-3{
     grid-row: span 3;
 }
+.h-4{
+    grid-row: span 4;
+}
 
 
 @media screen and (max-width: 400px){
@@ -425,6 +431,9 @@ footer{ /* escolher outra tipografia */
     }
     .w-1, .w-2, .w-3{grid-column: span 1;}
     .h-1, .h-2, .h-3{grid-row: span 1;}
+
+    .galeria-item .text{
+        opacity: .75;
 
 }
 
