@@ -433,7 +433,7 @@ footer{ /* escolher outra tipografia */
     .h-1, .h-2, .h-3{grid-row: span 1;}
 
     .galeria-item .text{
-        opacity: .75;
+        opacity: .75;}
 
 }
 
@@ -529,7 +529,6 @@ footer{ /* escolher outra tipografia */
 
 
 
-
 /* PÁGINAS CARROSELL */
 
 
@@ -611,7 +610,3 @@ img {
 }
 
 */
-
-
-
-
