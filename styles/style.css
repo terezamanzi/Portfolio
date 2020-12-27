@@ -99,14 +99,6 @@ nav{
     padding: 5px 0px 5px 0px;
     }
 
-@media screen and (max-width: 500px){
-    .menu li{padding: 0 0 0 0;}
-}    
-@media screen and (max-width: 325px){
-    .menu li{padding: 0; margin: -5px;}
-}    
-
-
 
 
 div.container{
@@ -190,6 +182,34 @@ main > a{
     background-attachment: fixed;
 }
 
+
+@media screen and (max-width: 500px){
+    .menu li{padding: 0 0 0 0;}
+}    
+@media screen and (max-width: 380px){
+    .menu li{padding: 0; margin: -5px;}
+    .capa{
+        background-image: url(../imagens/capa2.jpg);
+        background-position: top center;
+        height: 97vh;
+    }    
+    .design{
+        background-image: url(../imagens/menu/design_cel.jpg);
+        background-position: top center;
+    }    
+    .fotografia{
+        background-image: url(../imagens/menu/fotografia_cel.jpg);
+        background-position: top center;
+    }    
+    .web{
+        background-image: url(../imagens/menu/web_cel.jpg);
+        background-position: top center;
+    }    
+    .sobre{
+        background-image: url(../imagens/menu/sobre.jpg);
+        background-position: top center;
+    }
+}    
 
 
 
