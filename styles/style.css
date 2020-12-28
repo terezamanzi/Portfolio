@@ -183,42 +183,6 @@ main > a{
 }
 
 
-@media screen and (max-width: 500px){
-    .menu li{padding: 0 0 0 0;}
-}    
-@media screen and (max-width: 380px){
-    .menu li{padding: 0; margin: -5px;}
-    .capa{
-        background-image: url(../imagens/capa2.jpg);
-        background-position: top center;
-        height: 97vh;
-    }    
-    .design{
-        background-image: url(../imagens/menu/design_cel.jpg);
-        background-position: top center;
-    }    
-    .fotografia{
-        background-image: url(../imagens/menu/fotografia_cel.jpg);
-        background-position: top center;
-    }    
-    .web{
-        background-image: url(../imagens/menu/web_cel.jpg);
-        background-position: top center;
-    }    
-    .sobre{
-        background-image: url(../imagens/menu/sobre.jpg);
-        background-position: top center;
-    }
-    .container-3 .text{
-        opacity: 0;
-    }
-
-}    
-
-
-
-
-
 
 /*  DESIGN  */
 
@@ -547,6 +511,50 @@ footer{ /* escolher outra tipografia */
     #exper > li{text-align: left;}
     #exper > h1{text-align: left; padding-left: 40px;}
 }
+
+
+
+
+@media screen and (max-width: 500px){
+    .menu li{padding: 0 0 0 0;}
+}    
+@media screen and (max-width: 380px){
+    .menu li{padding: 0; margin: -5px;}
+    .capa{
+        background-image: url(../imagens/capa2.jpg);
+        background-position: top center;
+        height: 97vh;
+    }    
+    .design{
+        background-image: url(../imagens/menu/design_cel.jpg);
+        background-position: top center;
+    }    
+    .fotografia{
+        background-image: url(../imagens/menu/fotografia_cel.jpg);
+        background-position: top center;
+    }    
+    .web{
+        background-image: url(../imagens/menu/web_cel.jpg);
+        background-position: top center;
+    }    
+    .sobre{
+        background-image: url(../imagens/menu/sobre.jpg);
+        background-position: top center;
+    }
+    .container-3 .text{
+        opacity: 1;
+        font-size: 2.5em;
+    }
+
+    .container-3:hover .imagem img{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+
+}    
+
+
 
 
 
