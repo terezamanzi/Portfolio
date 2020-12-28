@@ -209,6 +209,10 @@ main > a{
         background-image: url(../imagens/menu/sobre.jpg);
         background-position: top center;
     }
+    .container-3 .text{
+        opacity: 0;
+    }
+
 }    
 
 
